@@ -158,6 +158,7 @@ Accent - #d8da2c
 
 body {
   background-color: #1e1e1e;
+  width: 100%;
 }
 
 .header-container {
@@ -165,11 +166,85 @@ body {
   width: 100%;
 }
 
-.content {
-  padding-top: 40px;
+@media only screen and (max-width: 999px) {
+  .content {
+    width: 100%;
+  }
+
+  .logo-link {
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(8px);
+    position: fixed;
+  }
+
+  .logo {
+    margin: 20px 0 10px;
+  }
+
+  .logo-container {
+    width: 20px;
+  }
+
+  .logo-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #d7d7d7;
+    margin-left: 10px;
+  }
+
+  .header-info {
+    flex-direction: row;
+    width: auto;
+    padding: 50px 0 20px;
+  }
+
+  .image-container {
+    width: 100px;
+  }
+
+  .header-info-container {
+    margin-left: 20px;
+  }
+
+  .title {
+    color: #d7d7d7;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .sub-title {
+    color: #d8da2c;
+    font-weight: normal;
+    letter-spacing: 3.5px;
+    margin-right: -3.5px;
+    margin-bottom: 10px;
+  }
+
+  .link-container {
+    width: 100%;
+  }
+
+  .link-list {
+    flex-direction: row;
+    color: #d7d7d7;
+  }
+
+  .link-image-container {
+    font-size: 30px;
+    margin: 0 10px;
+  }
+
+  .nav-links {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
+  .content {
+    padding-top: 40px;
+  }
+
   .logo-link {
     width: 100%;
     align-items: flex-end;
@@ -466,7 +541,7 @@ body {
   .footer {
     width: 100%;
     background-color: #0d0d0d;
-    padding: 50px;
+    padding: 50px 0;
   }
 
   .footer-logo-link {
