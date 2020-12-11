@@ -510,11 +510,11 @@ body {
     font-size: 50px;
     letter-spacing: 5px;
     margin-top: 50px;
-    transition: all 0.25s ease-in-out;
-    animation: fade 7s linear 0s infinite forwards;
+    /* transition: all 0.25s ease-in-out;
+    animation: fade 7s linear 0s infinite forwards; */
   }
 
-  @keyframes fade {
+  /* @keyframes fade {
     0% {
       opacity: 0;
     }
@@ -533,7 +533,7 @@ body {
     100% {
       opacity: 0;
     }
-  }
+  } */
 
   .title:hover {
     cursor: default;

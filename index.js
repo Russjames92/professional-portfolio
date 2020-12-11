@@ -1,8 +1,9 @@
-function Counter(elem, content, delay) {
+function Counter(elem, content, setElem, delay) {
     let value = parseInt(elem.getAttribute("value"), 10);
     let interval;
 
     function updateDisplay(value) {
+        setElem = value
         elem.innerHTML = value;
     }
 
@@ -31,11 +32,13 @@ let subTitles = [
 ]
 
 let elem = document.getElementById("title");
+let setTitle = document.createElement(h3);
 let elem2 = document.getElementById("sub-title")
+let setSubtitle = document.createElement(h6);
 
 
-titleChanger = new Counter(elem, titles, 7000);
-subTitleChanger = new Counter(elem2, subTitles, 7000);
+titleChanger = new Counter(elem, titles, setTitle, 7000);
+subTitleChanger = new Counter(elem2, subTitles, setSubtitle, 7000);
 titleChanger.start();
 subTitleChanger.start();
 
