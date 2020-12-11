@@ -331,6 +331,19 @@ body {
     color: #d8da2c;
   }
 
+  .live-link {
+    width: 100%;
+  }
+
+  .live-link-container {
+    background-color: #d8da2c;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+
   .prj-icon {
     font-size: 50px;
     margin: 10px 0 20px 0;
@@ -660,7 +673,7 @@ body {
 
   .project:hover {
     transform: scale(1.05);
-    cursor: pointer;
+    cursor: default;
   }
 
   .project-sub-title {
@@ -708,6 +721,22 @@ body {
   .sshot {
     height: 100%;
     width: auto;
+  }
+
+  .live-link-container {
+    background-color: #d8da2c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .live-link-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .live-link:hover {
+    color: #0d0d0d;
   }
 
   .prj-icon {
