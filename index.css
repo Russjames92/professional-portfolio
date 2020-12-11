@@ -196,16 +196,16 @@ body {
 
   .header-info {
     flex-direction: row;
-    width: auto;
+    width: 100%;
     padding: 50px 0 20px;
   }
 
   .image-container {
-    width: 100px;
+    display: none;
   }
 
   .header-info-container {
-    margin-left: 20px;
+    width: 100%;
   }
 
   .title {
@@ -238,6 +238,184 @@ body {
 
   .nav-links {
     display: none;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .personal {
+    margin: 10px 0;
+    background-color: #0d0d0d;
+  }
+
+  .personal-description-container {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .about-image-container {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .description-title,
+  .project-title,
+  .contact-title {
+    color: #d8da2c;
+    font-size: 20px;
+  }
+
+  .description {
+    color: #d7d7d7;
+    font-size: 14px;
+    text-align: left;
+    margin: 10px 15px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.25;
+  }
+
+  .para-hr {
+    border: 2px dashed #d8da2c;
+    width: 25%;
+  }
+
+  .projects-container {
+    margin: 10px 0;
+  }
+
+  .project {
+    background-color: #0d0d0d;
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+
+  .project-sub-title {
+    color: #d7d7d7;
+    margin-top: 20px;
+  }
+
+  .sshot-container {
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: solid 2.5px #d8da2c;
+    margin: 10px 0;
+  }
+
+  .tech-title {
+    color: #d7d7d7;
+    margin: 10px 0;
+  }
+
+  .skill-container {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fe-list,
+  .be-list {
+    background-color: #1e1e1e;
+    width: 100%;
+    margin: 10px 5px;
+    border-radius: 5px;
+    color: #d7d7d7;
+    padding-bottom: 10px;
+  }
+
+  .list-title {
+    margin: 10px 0;
+    color: #d8da2c;
+  }
+
+  .prj-icon {
+    font-size: 50px;
+    margin: 10px 0 20px 0;
+  }
+
+  .fab {
+    color: #d7d7d7;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-title {
+    margin-bottom: 20px;
+  }
+
+  .contact-container {
+    width: 100%;
+    background-image: url(./images/watch-bg.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    color: #d7d7d7;
+    margin: 20px 0;
+  }
+
+  .info-item {
+    margin: 5px 0;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  #my-form {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .email-input,
+  .message-box,
+  .send-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    outline: none;
+    border: none;
+  }
+
+  .email-input,
+  .message-box {
+    color: #d7d7d7;
+    background-color: rgba(215, 215, 215, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .send-button {
+    background-color: #d8da2c;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #0d0d0d;
+  }
+
+  .footer-logo-container {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .footer-logo {
+    margin: 20px 0;
+  }
+
+  .footer-logo-title {
+    color: #d7d7d7;
+    font-size: 10px;
+    letter-spacing: 2px;
   }
 }
 
@@ -292,6 +470,28 @@ body {
     letter-spacing: 5px;
     margin-top: 50px;
     transition: all 0.25s ease-in-out;
+    animation: fade 7s linear 0s infinite forwards;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 
   .title:hover {
@@ -304,6 +504,7 @@ body {
     letter-spacing: 16px;
     text-align: right;
     margin: 20px -16px 20px 0;
+    animation: fade 7s linear 0s infinite forwards;
   }
 
   .sub-title:hover {
@@ -382,6 +583,10 @@ body {
     padding: 10px;
   }
 
+  .about-image-container {
+    display: none;
+  }
+
   .description-title,
   .project-title,
   .contact-title {
@@ -440,6 +645,10 @@ body {
   .tech-title {
     color: #d7d7d7;
     margin-top: 20px;
+  }
+
+  .skill-container {
+    width: 100%;
   }
 
   .fe-list,
@@ -565,6 +774,33 @@ body {
   .send-button:hover {
     transform: scale(1.05);
     cursor: pointer;
+  }
+
+  #status {
+    color: #d8da2c;
+  }
+
+  #status.success {
+    animation: status 4s ease forwards;
+  }
+
+  #status.error {
+    animation: status 4s ease forwards;
+  }
+
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
   }
 
   .footer {
