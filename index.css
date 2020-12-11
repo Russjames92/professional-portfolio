@@ -417,6 +417,34 @@ body {
     font-size: 10px;
     letter-spacing: 2px;
   }
+
+  #status {
+    color: #d8da2c;
+    margin-bottom: 10px;
+  }
+
+  #status.success {
+    animation: status 4s ease forwards;
+  }
+
+  #status.error {
+    animation: status 4s ease forwards;
+  }
+
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 }
 
 @media only screen and (min-width: 1040px) {
